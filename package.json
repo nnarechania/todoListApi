@@ -4,14 +4,22 @@
   "description": "RESTful todoListApi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://https://github.com/nnarechania/todoListApi.git"
   },
   "author": "Nishal Narechania",
   "license": "ISC",
   "devDependencies": {
-    "nodeman": "^1.1.2"
+    "nodeman": "^1.1.2",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1"
   }
 }
