@@ -49,11 +49,5 @@ exports.delete_a_task = function(req, res) {
 exports.hello_world = function(req, res) {
 	if (! req.query.sender)
 		res.json({message: 'No request!'});
-	res.json({message: 
-				{
-					from: req.query.sender,
-					subject: 'Hello',
-					body: 'Hello world!'
-				}
-			});
+	res.json(req.body);
 };

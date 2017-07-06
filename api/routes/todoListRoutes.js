@@ -13,5 +13,5 @@ module.exports = function(app) {
 		.delete(todoList.delete_a_task);
 
 	app.route('/hello')
-		.get(todoList.hello_world);
+		.post(todoList.hello_world);
 };
