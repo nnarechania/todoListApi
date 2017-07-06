@@ -45,3 +45,9 @@ exports.delete_a_task = function(req, res) {
 		res.json({message: 'Task successfully deleted'});
 	});
 };
+
+exports.hello_world = function(req, res) {
+	if (! req.query.sender)
+		res.json({message: 'No request!'});
+	res.json(req.body);
+};
